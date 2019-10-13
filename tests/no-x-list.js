@@ -14,27 +14,33 @@ ruleTester.run('no-x-list', rule, {
     invalid: [
         {
             code: 'var whitelist = []',
-            errors: [{ messageId: 'avoidWhitelist' }]
+            errors: [{ messageId: 'avoidWhitelist' }],
+            output: 'var allowlist = []'
         },
         {
             code: 'var whiteList = []',
-            errors: [{ messageId: 'avoidWhitelist' }]
+            errors: [{ messageId: 'avoidWhitelist' }],
+            output: 'var allowList = []'
         },
         {
             code: 'var numberWhitelist = [1,2,3]',
-            errors: [{ messageId: 'avoidWhitelist' }]
+            errors: [{ messageId: 'avoidWhitelist' }],
+            output: 'var numberAllowlist = [1,2,3]'
         },
         {
             code: 'var whitelisted = ["t", "z"]',
-            errors: [{ messageId: 'avoidWhitelist' }]
+            errors: [{ messageId: 'avoidWhitelist' }],
+            output: 'var allowlisted = ["t", "z"]'
         },
         {
             code: 'var white_listed = ["t", "z"]',
-            errors: [{ messageId: 'avoidWhitelist' }]
+            errors: [{ messageId: 'avoidWhitelist' }],
+            output: 'var allow_listed = ["t", "z"]'
         },
         {
             code: 'var white_list = [["t", "z"]]',
-            errors: [{ messageId: 'avoidWhitelist' }]
+            errors: [{ messageId: 'avoidWhitelist' }],
+            output: 'var allow_list = [["t", "z"]]'
         }
     ]
 });
@@ -45,27 +51,33 @@ ruleTester.run('no-x-list', rule, {
     invalid: [
         {
             code: 'var blacklist = []',
-            errors: [{ messageId: 'avoidBlacklist' }]
+            errors: [{ messageId: 'avoidBlacklist' }],
+            output: 'var denylist = []'
         },
         {
             code: 'var blackList = []',
-            errors: [{ messageId: 'avoidBlacklist' }]
+            errors: [{ messageId: 'avoidBlacklist' }],
+            output: 'var denyList = []'
         },
         {
             code: 'var numberBlacklist = [1,2,3]',
-            errors: [{ messageId: 'avoidBlacklist' }]
+            errors: [{ messageId: 'avoidBlacklist' }],
+            output: 'var numberDenylist = [1,2,3]'
         },
         {
             code: 'var blacklisted = ["t", "z"]',
-            errors: [{ messageId: 'avoidBlacklist' }]
+            errors: [{ messageId: 'avoidBlacklist' }],
+            output: 'var denylisted = ["t", "z"]'
         },
         {
             code: 'var black_listed = ["t", "z"]',
-            errors: [{ messageId: 'avoidBlacklist' }]
+            errors: [{ messageId: 'avoidBlacklist' }],
+            output: 'var deny_listed = ["t", "z"]'
         },
         {
             code: 'var black_list = [["t", "z"]]',
-            errors: [{ messageId: 'avoidBlacklist' }]
+            errors: [{ messageId: 'avoidBlacklist' }],
+            output: 'var deny_list = [["t", "z"]]'
         }
     ]
 });
@@ -75,19 +87,23 @@ ruleTester.run('no-x-list', rule, {
     invalid: [
         {
             code: 'var blackballed = []',
-            errors: [{ messageId: 'avoidBlackball' }]
+            errors: [{ messageId: 'avoidBlackball' }],
+            output: 'var denyballed = []'
         },
         {
             code: 'var blackBalled = []',
-            errors: [{ messageId: 'avoidBlackball' }]
+            errors: [{ messageId: 'avoidBlackball' }],
+            output: 'var denyBalled = []'
         },
         {
             code: 'var black_ball_list = [1,2,3]',
-            errors: [{ messageId: 'avoidBlackball' }]
+            errors: [{ messageId: 'avoidBlackball' }],
+            output: 'var deny_ball_list = [1,2,3]'
         },
         {
             code: 'var blackBall = ["t", "z"]',
-            errors: [{ messageId: 'avoidBlackball' }]
+            errors: [{ messageId: 'avoidBlackball' }],
+            output: 'var denyBall = ["t", "z"]'
         }
     ]
 });
