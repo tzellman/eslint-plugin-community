@@ -1,0 +1,46 @@
+{
+  "name": "eslint-plugin-community",
+  "version": "0.1.0-alpha.0",
+  "description": "Rules that promote community and inclusiveness in code",
+  "keywords": ["eslint", "eslintplugin", "eslint-plugin"],
+  "author": "tzellman",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint lib tests",
+    "test": "jest"
+  },
+  "dependencies": {
+    "requireindex": "^1.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-eslint-plugin": "^2.1.0",
+    "eslint-plugin-jest": "^22.19.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.9",
+    "jest": "^24.9.0",
+    "jest-runner-eslint": "^0.7.5",
+    "lint-staged": "^9.4.2",
+    "micromatch": "^4.0.2",
+    "prettier": "^1.18.2"
+  },
+  "engines": {
+    "node": "6.* || 8.* || >= 10.*"
+  },
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "commit-msg": "npx commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "jest": {
+    "testMatch": ["**/tests/*.js"],
+    "testEnvironment": "node",
+    "verbose": true
+  }
+}
