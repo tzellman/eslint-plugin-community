@@ -8,35 +8,33 @@ const ruleTester = new RuleTester({
     }
 });
 
-const message = 'Variable names should not contain "whitelist"';
-
 ruleTester.run('no-whitelist', rule, {
-    valid: ['var allowList = ["zelda", "link"]', 'var white = "000"'],
+    valid: ['var allowList = ["zelda", "link"]', 'var white = "000"', 'let somelist = []'],
 
     invalid: [
         {
             code: 'var whitelist = []',
-            errors: [{ message }]
+            errors: [{ messageId: 'avoidName' }]
         },
         {
             code: 'var whiteList = []',
-            errors: [{ message }]
+            errors: [{ messageId: 'avoidName' }]
         },
         {
             code: 'var numberWhitelist = [1,2,3]',
-            errors: [{ message }]
+            errors: [{ messageId: 'avoidName' }]
         },
         {
             code: 'var whitelisted = ["t", "z"]',
-            errors: [{ message }]
+            errors: [{ messageId: 'avoidName' }]
         },
         {
             code: 'var white_listed = ["t", "z"]',
-            errors: [{ message }]
+            errors: [{ messageId: 'avoidName' }]
         },
         {
             code: 'var white_list = [["t", "z"]]',
-            errors: [{ message }]
+            errors: [{ messageId: 'avoidName' }]
         }
     ]
 });
