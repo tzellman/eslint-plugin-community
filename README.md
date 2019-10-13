@@ -33,7 +33,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "community/no-whitelist": "warn"
+        "community/no-x-list": "warn"
     }
 }
 ```
@@ -42,6 +42,6 @@ Then configure the rules you want to use under the rules section.
 
 ## Rules
 
-| rule                           | description                                                             | recommended | fixable |
-| ------------------------------ | ----------------------------------------------------------------------- | ----------- | ------- |
-| [`no-whitelist`][no-whitelist] | Avoid using the term "whitelist" and its derivatives in variable names. | :bangbang:  |         |
+| rule                     | description                                                               | recommended | fixable |
+| ------------------------ | ------------------------------------------------------------------------- | ----------- | ------- |
+| [`no-x-list`][no-x-list] | discourage using common inclusion/exclusion terms that may relate to race | :bangbang:  |         |
