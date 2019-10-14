@@ -1,9 +1,16 @@
 {
   "name": "eslint-plugin-community",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.1",
   "description": "Rules that promote community and inclusiveness in code",
-  "keywords": ["eslint", "eslintplugin", "eslint-plugin"],
-  "author": "tzellman",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "community",
+    "inclusiveness"
+  ],
+  "author": "tzellman <tzellman@gmail.com>",
+  "repository": "git@github.com:tzellman/eslint-plugin-community.git",
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint lib tests",
