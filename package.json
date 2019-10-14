@@ -43,6 +43,17 @@
     "testMatch": ["**/tests/*.js"],
     "testEnvironment": "node",
     "verbose": true,
-    "watchPlugins": ["jest-runner-eslint/watch-fix"]
+    "watchPlugins": ["jest-runner-eslint/watch-fix"],
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": ["/node_modules/", "/tests/"],
+    "coverageReporters": ["json", "lcov", "text", "text-summary"],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   }
 }

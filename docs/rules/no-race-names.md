@@ -10,15 +10,31 @@ the problems reported by this rule.
 Examples of **incorrect** code for this rule:
 
 ```js
+// list inclusion/exclusion
 let allowList = ["zelda", "link"];
 let denyList = ["ganon", "ganondorf"];
+
+// master/slave
+let master = "server1";
+let masterNode = "server1";
+let _master = "server1";
+let slave = "server2";
+let slaveServer = "server2";
+let slave_set = ["server2", "server3"];
 ```
 
 Examples of **correct** code for this rule:
 
 ```js
+// list inclusion/exclusion
 let whiteList = ["zelda", "link"];
 let blackList = ["ganon", "ganondorf"];
+
+// primary/replica
+let primary = "server1";
+let primaryNode = "server1";
+let replica = "server2";
+let replica_set = ["server2", "server3"];
 ```
 
 ## Further Reading/Watching
