@@ -53,3 +53,5 @@ Then configure the rules you want to use under the rules section.
 | :bangbang: | Reports as error in recommended configuration   |
 | :warning:  | Reports as warning in recommended configuration |
 | :wrench:   | Rule is fixable with `eslint --fix`             |
+
+[no-x-list]: docs/rules/no-x-list.md
