@@ -33,16 +33,16 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "community/no-x-list": "warn"
+        "community/no-race-names": "warn"
     }
 }
 ```
 
 ## Rules
 
-| rule                     | description                                                               | recommended | fixable  |
-| ------------------------ | ------------------------------------------------------------------------- | ----------- | -------- |
-| [`no-x-list`][no-x-list] | discourage using common inclusion/exclusion terms that may relate to race | :warning:   | :wrench: |
+| rule                             | description                                           | recommended | fixable  |
+| -------------------------------- | ----------------------------------------------------- | ----------- | -------- |
+| [`no-race-names`][no-race-names] | discourage using common terms that may relate to race | :warning:   | :wrench: |
 
 **Key**
 
@@ -52,4 +52,4 @@ Then configure the rules you want to use under the rules section.
 | :warning:  | Reports as warning in recommended configuration |
 | :wrench:   | Rule is fixable with `eslint --fix`             |
 
-[no-x-list]: docs/rules/no-x-list.md
+[no-race-names]: docs/rules/no-race-names.md
