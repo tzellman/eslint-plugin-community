@@ -1,6 +1,6 @@
-# Discourage using common inclusion/exclusion terms that may relate to race (no-x-list)
+# Discourage using common inclusion/exclusion terms that may relate to race (no-race-names)
 
-The `no-x-list` rule generates warnings when variable identifiers include terms that may relate to race, encouraging a more meaningful way to describe inclusion/exclusion (e.g. allow and deny).
+The `no-race-names` rule generates warnings when variable identifiers include terms that may relate to race. This encourages a more meaningful way to describe inclusion/exclusion (e.g. allow and deny), which should be more intuitive to anyone reading the code.
 
 :wrench: The `--fix` option on the command line can automatically fix some of
 the problems reported by this rule.

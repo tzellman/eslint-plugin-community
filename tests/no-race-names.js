@@ -1,6 +1,6 @@
 'use strict';
 
-const rule = require('../lib/rules/no-x-list');
+const rule = require('../lib/rules/no-race-names');
 const RuleTester = require('eslint').RuleTester;
 const ruleTester = new RuleTester({
     parserOptions: {
@@ -8,7 +8,7 @@ const ruleTester = new RuleTester({
     }
 });
 
-ruleTester.run('no-x-list', rule, {
+ruleTester.run('no-race-names', rule, {
     valid: [
         'var allowList = ["zelda", "link"]',
         'var white = "fff"',
