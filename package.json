@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-community",
-  "version": "0.1.1",
+  "version": "0.2.0-alpha.0",
   "description": "Rules that promote community and inclusiveness in code",
   "keywords": [
     "eslint",
