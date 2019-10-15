@@ -11,8 +11,8 @@ Examples of **incorrect** code for this rule:
 
 ```js
 // list inclusion/exclusion
-let allowList = ["zelda", "link"];
-let denyList = ["ganon", "ganondorf"];
+let whiteList = ["zelda", "link"];
+let blackList = ["ganon", "ganondorf"];
 
 // master/slave
 let master = "server1";
@@ -27,8 +27,8 @@ Examples of **correct** code for this rule:
 
 ```js
 // list inclusion/exclusion
-let whiteList = ["zelda", "link"];
-let blackList = ["ganon", "ganondorf"];
+let allowList = ["zelda", "link"];
+let denyList = ["ganon", "ganondorf"];
 
 // primary/replica
 let primary = "server1";
